@@ -94287,7 +94287,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 4
+  m_GravityScale: 5
   m_Material: {fileID: 6200000, guid: fa2f0c996a1b3f4459780531e092338f, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
@@ -94297,7 +94297,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!95 &1991084105
 Animator:
@@ -94402,16 +94402,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountOfJumps: 1
-  movementSpeed: 10
-  jumpForce: 16
+  movementSpeed: 9
+  jumpForce: 20
   groundCheckRadius: 0.3
-  wallCheckDistance: 0.4
-  wallSlideSpeed: 0.1
+  wallCheckDistance: 0.65
+  wallSlideSpeed: 1
   movementForceInAir: 50
   airDragMultiplier: 0.95
   variableJumpHeightMultiplier: 0.5
   wallHopForce: 10
-  wallJumpForce: 20
+  wallJumpForce: 30
+  jumpTimerSet: 0.15
+  turnTimerSet: 0.1
   wallHopDirection: {x: 1, y: 0.5}
   wallJumpDirection: {x: 1, y: 2}
   groundCheck: {fileID: 1300874595}
